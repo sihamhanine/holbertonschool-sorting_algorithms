@@ -30,10 +30,12 @@ void insertion_sort_list(listint_t **list)
 {
 if (list == NULL || *list == NULL || (*list)->next == NULL)
 return;
-listint_t *current = (*list)->next;
+listint_t *current;
+current = (*list)->next;
 while (current != NULL)
 {
-listint_t *ptr = current;
+listint_t *ptr;
+ptr = current;
 current = current->next;
 while (ptr != NULL && ptr->prev != NULL)
 {
